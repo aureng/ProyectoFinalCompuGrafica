@@ -1,16 +1,16 @@
 ﻿  MainPrueba.cpp
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\modelAnim.h(104,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\modelAnim.h(519,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(410,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(786,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(787,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(791,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(792,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(794,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Zoologico\MainPrueba.cpp(795,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\modelAnim.h(104,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\modelAnim.h(519,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(410,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(786,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(787,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(791,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(792,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(794,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(795,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
 soil2-debug.lib(etc1_utils.obj) : warning LNK4099: PDB '' was not found with 'soil2-debug.lib(etc1_utils.obj)' or at ''; linking object as if no debug info
 soil2-debug.lib(image_DXT.obj) : warning LNK4099: PDB '' was not found with 'soil2-debug.lib(image_DXT.obj)' or at ''; linking object as if no debug info
 soil2-debug.lib(image_helper.obj) : warning LNK4099: PDB '' was not found with 'soil2-debug.lib(image_helper.obj)' or at ''; linking object as if no debug info
 soil2-debug.lib(SOIL2.obj) : warning LNK4099: PDB '' was not found with 'soil2-debug.lib(SOIL2.obj)' or at ''; linking object as if no debug info
-  Zoologico.vcxproj -> C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\Zoologico\Debug\Zoologico.exe
+  Zoologico.vcxproj -> C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Debug\Zoologico.exe
