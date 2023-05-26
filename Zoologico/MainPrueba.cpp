@@ -37,7 +37,8 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(-100.0f, 2.0f, -45.0f));
+Camera  camera(glm::vec3(-28.0f, 16.0f, -13.0f));
+//Camera  camera(glm::vec3(-100.0f, 2.0f, -45.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
@@ -151,7 +152,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);*/
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Practica 12", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Proyecto del Zoologico", nullptr, nullptr);
 
 	if (nullptr == window)
 	{
@@ -202,6 +203,7 @@ int main()
 	Model BrazoDer((char*)"Models/Personaje/brazoder.obj");
 	Model BrazoIzq((char*)"Models/Personaje/brazoizq.obj");
 	Model Cabeza((char*)"Models/Personaje/cabeza.obj");
+	Model Escenario((char*)"Models/Escenario/prueba.obj");
 
 
 
@@ -391,12 +393,12 @@ int main()
 
 	// Load textures
 	vector<const GLchar*> faces;
-	faces.push_back("SkyBox/right.tga");
-	faces.push_back("SkyBox/left.tga");
-	faces.push_back("SkyBox/top.tga");
-	faces.push_back("SkyBox/bottom.tga");
-	faces.push_back("SkyBox/back.tga");
-	faces.push_back("SkyBox/front.tga");
+	faces.push_back("SkyBox/right.png");
+	faces.push_back("SkyBox/left.png");
+	faces.push_back("SkyBox/top.png");
+	faces.push_back("SkyBox/bottom.png");
+	faces.push_back("SkyBox/back.png");
+	faces.push_back("SkyBox/front.png");
 	
 	GLuint cubemapTexture = TextureLoading::LoadCubemap(faces);
 
@@ -436,7 +438,7 @@ int main()
 		// == ==========================
 		// Directional light
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.direction"), -0.2f, -1.0f, -0.3f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.0f, 1.0f, 1.0f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.7891f, 0.7031f, 0.6055f); //SEPIA 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.4f, 0.4f, 0.4f);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.5f, 0.5f, 0.5f);
 
@@ -497,7 +499,6 @@ int main()
 		// Create camera transformations
 		glm::mat4 view;
 		view = camera.GetViewMatrix();
-
 
 		// Get the uniform locations
 		GLint modelLoc = glGetUniformLocation(lightingShader.Program, "model");
@@ -592,7 +593,7 @@ int main()
 		model = glm::translate(model, glm::vec3(0.0f, 2.5f, 0));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
-		Cabeza.Draw(lightingShader);
+		Escenario.Draw(lightingShader);
 	
 		//Traslucidez
 
