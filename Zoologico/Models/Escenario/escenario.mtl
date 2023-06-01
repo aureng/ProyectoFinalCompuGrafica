@@ -1,0 +1,72 @@
+newmtl CavePlatform_8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.08 0.08 0.08
+Tf 1.00 1.00 1.00
+map_Kd CavePlatform8_Base_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CavePlatform8_Base_Specular.png
+Ns 539.60
+newmtl CaveWalls1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.12 0.12 0.12
+Tf 1.00 1.00 1.00
+map_Kd CaveWalls1_Base_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CaveWalls1_Base_Specular.png
+Ns 752.60
+newmtl DoorSG
+illum 4
+Kd 0.80 0.55 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.33 0.23 0.07
+Ns 23.00
+newmtl DoorSG1
+illum 4
+Kd 0.02 0.02 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl FloorSG
+illum 4
+Kd 0.48 0.29 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.00
+Ns 23.00
+newmtl WoodenFBXASC032DoorwaySG
+illum 4
+Kd 0.48 0.29 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.07 0.04
+Ns 23.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd desert.jpg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd madera.jpg
+Ni 1.00

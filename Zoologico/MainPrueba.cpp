@@ -203,9 +203,9 @@ int main()
 	Model BrazoDer((char*)"Models/Personaje/brazoder.obj");
 	Model BrazoIzq((char*)"Models/Personaje/brazoizq.obj");
 	Model Cabeza((char*)"Models/Personaje/cabeza.obj");
-	Model Escenario((char*)"Models/Escenario/prueba.obj");
-
-
+	Model Escenario((char*)"Models/Escenario/Escenario.obj");
+	ModelAnim Prueba("Animaciones/Prueba/prueba.dae");
+	Prueba.initShaders(animShader.Program);
 
 	// Build and compile our shader program
 
@@ -589,10 +589,10 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
-		model = glm::translate(model, glm::vec3(0.0f, 2.5f, 0));
+		//model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		//model = glm::translate(model, glm::vec3(0.0f, 2.5f, 0));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
+		//glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
 		Escenario.Draw(lightingShader);
 	
 		//Traslucidez
@@ -609,6 +609,28 @@ int main()
 		glEnable(GL_DEPTH_TEST);
 		glBindVertexArray(0);
 
+		animShader.Use();
+		modelLoc = glGetUniformLocation(animShader.Program, "model");
+		viewLoc = glGetUniformLocation(animShader.Program, "view");
+		projLoc = glGetUniformLocation(animShader.Program, "projection");
+
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
+		glUniform3f(glGetUniformLocation(animShader.Program, "material.specular"), 0.5f, 0.5f, 0.5f);
+		glUniform1f(glGetUniformLocation(animShader.Program, "material.shininess"), 32.0f);
+		glUniform3f(glGetUniformLocation(animShader.Program, "light.ambient"), 0.0f, 1.0f, 1.0f);
+		glUniform3f(glGetUniformLocation(animShader.Program, "light.diffuse"), 0.0f, 1.0f, 1.0f);
+		glUniform3f(glGetUniformLocation(animShader.Program, "light.specular"), 0.5f, 0.5f, 0.5f);
+		glUniform3f(glGetUniformLocation(animShader.Program, "light.direction"), 0.0f, -1.0f, -1.0f);
+		view = camera.GetViewMatrix();
+
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0, 5.0f, 0));
+		model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Prueba.Draw(animShader);
+		glBindVertexArray(0);
 
 		// Also draw the lamp object, again binding the appropriate shader
 		lampShader.Use();

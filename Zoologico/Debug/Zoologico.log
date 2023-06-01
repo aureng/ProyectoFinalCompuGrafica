@@ -2,10 +2,10 @@
 C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\modelAnim.h(104,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\modelAnim.h(519,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(412,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(787,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(788,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(792,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(793,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(795,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(796,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(809,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(810,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(814,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(815,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(817,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Zoologico\MainPrueba.cpp(818,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
   Zoologico.vcxproj -> C:\Users\auren\Documents\Cosas UNAM\Tareas y trabajos\Compu Grafica\ProyectoFinalCompuGrafica\Debug\Zoologico.exe
