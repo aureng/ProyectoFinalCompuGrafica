@@ -37,7 +37,7 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(-28.0f, 16.0f, -13.0f));
+Camera  camera(glm::vec3(66.0f, 13.0f, 32.0f));
 //Camera  camera(glm::vec3(-100.0f, 2.0f, -45.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
@@ -204,6 +204,7 @@ int main()
 	Model BrazoIzq((char*)"Models/Personaje/brazoizq.obj");
 	Model Cabeza((char*)"Models/Personaje/cabeza.obj");
 	Model Escenario((char*)"Models/Escenario/Escenario.obj");
+	Model Scn_Leones((char*)"Models/Zonas/Leones/Scn_Leones.obj");
 	ModelAnim Prueba("Animaciones/Prueba/prueba.dae");
 	Prueba.initShaders(animShader.Program);
 
@@ -528,23 +529,19 @@ int main()
 		
 		view = camera.GetViewMatrix();
 		glm::mat4 model(1);
-		tmp = model = glm::translate(model, glm::vec3(0, 1, 0));
-		model = glm::translate(model,glm::vec3(posX,posY,posZ));
-		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		Torso.Draw(lightingShader);
+		//model = glm::translate(model,glm::vec3(posX,posY,posZ));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Escenario.Draw(lightingShader);
 
 	
 
 		//Pierna Izq
 		view = camera.GetViewMatrix();
-		model = glm::translate(tmp, glm::vec3(-0.5f, 0.0f, -0.1f));
-		model = glm::translate(model, glm::vec3(posX, posY, posZ));
-		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
-		model = glm::rotate(model, glm::radians(-rotRodIzq), glm::vec3(1.0f, 0.0f, 0.0f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
-		PiernaDer.Draw(lightingShader);
+		//model = glm::translate(model, glm::vec3(posX, posY, posZ));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
+		Scn_Leones.Draw(lightingShader);
+
 	//	Pie Izq
 		view = camera.GetViewMatrix();
 		model = glm::translate(model, glm::vec3(0, -0.9f, -0.2f));
@@ -593,7 +590,7 @@ int main()
 		//model = glm::translate(model, glm::vec3(0.0f, 2.5f, 0));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//glUniform1f(glGetUniformLocation(lightingShader.Program, "transparencia"), 0.0);
-		Escenario.Draw(lightingShader);
+		//Escenario.Draw(lightingShader);
 	
 		//Traslucidez
 
